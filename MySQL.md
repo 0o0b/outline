@@ -456,7 +456,7 @@ InnoDB 引擎页大小为 16KB（`show variables like 'innodb_page_size';`），
   
 ![MySQL 单表最大数据量](img/MySQL/MySQL%20%E5%8D%95%E8%A1%A8%E6%9C%80%E5%A4%A7%E6%95%B0%E6%8D%AE%E9%87%8F.png )
   
-计算公式：x^z-1^ * y
+计算公式：$x^{z-1} * y$
   
 - x：非叶子结点内指向其他内存页的指针数量
 - y：叶子结点内可容纳记录数，直接受到单记录大小的影响
