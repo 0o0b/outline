@@ -7,7 +7,7 @@ description = "The example book covers examples."
 create-missing = false
 
 [output.html]
-additional-css = ["css/common.css"]
+additional-css = ["src/css/common.css"]
 
 [output.html.search]
 limit-results = 15
