@@ -1,7 +1,7 @@
 [book]
-title = "Example book"
+title = "大纲"
 authors = ["0o0b"]
-description = "The example book covers examples."
+description = ""
 
 [build]
 create-missing = false
