@@ -1,5 +1,6 @@
 ---
 title: MySQL
+mathjax: true
 ---
 <style type="text/css">* {font-family: YaHei Consolas Hybrid, Consolas;}</style>
 
