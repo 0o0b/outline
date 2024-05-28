@@ -1,0 +1,4 @@
+# MathJax
+mathjax:
+  enable: true
+  per_page: true
