@@ -110,7 +110,7 @@ metadata lock，元数据锁，表级锁。
 
 所有的 DDL 会对涉及表加 MDL 互斥锁，所有的 DML、DQL 会对涉及表加 MDL 共享锁。
 
-![MySQL MDL](img/MySQL/MySQL%20MDL.png?raw=true)
+![MySQL MDL](../img/MySQL/MySQL%20MDL.png?raw=true)
 
 如何安全地在生产环境执行DDL：
 
@@ -295,7 +295,7 @@ InnoDB 中通过 MVCC（多版本并发控制）实现了快照读，使得读-�
 - DB_TRX_ID 对应事务在 Read View 生成之前创建（DB_TRX_ID < low_limit_id）
 - DB_TRX_ID 对应事务已提交（!trx_list.contains(DB_TRX_ID)）
 
-![MySQL MVCC](img/MySQL/MySQL%20MVCC.png?raw=true)
+![MySQL MVCC](../img/MySQL/MySQL%20MVCC.png?raw=true)
 
 ## 不同隔离级别实现
 
@@ -324,7 +324,7 @@ RC 隔离级别下，每个快照都会生成并获取最新的 Read View；而�
 
 ## 使用 redo log 的原因
 
-![MySQL redo log](img/MySQL/MySQL%20redo%20log.jpg?raw=true)
+![MySQL redo log](../img/MySQL/MySQL%20redo%20log.jpg?raw=true)
 
 InnoDB 以页为单位对存储空间进行管理，而页大小（innodb_page_size）默认为 16KB。若每次修改几个字节的数据后，就将整个数据页刷回磁盘，太浪费。
 
@@ -368,7 +368,7 @@ InnoDB 以页为单位对存储空间进行管理，而页大小（innodb_page_s
 
 ### 角色
 
-![MySQL 主从复制](img/MySQL/MySQL%20%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6.jpg?raw=true)
+![MySQL 主从复制](../img/MySQL/MySQL%20%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6.jpg?raw=true)
 
 - 主库的增删改操作会全部记录在 binlog 中
 - 从库通过 I/O 线程向主库请求 binlog 数据，主库 Dump 线程负责提供数据，而后从库 I/O 线程将获得的数据写入 relay log
@@ -457,7 +457,7 @@ InnoDB 引擎页大小为 16KB（`show variables like 'innodb_page_size';`），
 
 这个问题一般是指，三层B+树聚集索引可存储的数据量。
 
-![MySQL 单表最大数据量](img/MySQL/MySQL%20%E5%8D%95%E8%A1%A8%E6%9C%80%E5%A4%A7%E6%95%B0%E6%8D%AE%E9%87%8F.png?raw=true)
+![MySQL 单表最大数据量](../img/MySQL/MySQL%20%E5%8D%95%E8%A1%A8%E6%9C%80%E5%A4%A7%E6%95%B0%E6%8D%AE%E9%87%8F.png?raw=true)
 
 计算公式：$x^{z-1} \times y$
 
