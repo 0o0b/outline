@@ -1,0 +1,21 @@
+local_search:
+  enable: true
+
+subtitle:
+  # 调用一言网的一句話（简体）
+  source: https://hitokoto.cn/
+
+# 主页面的top_img
+index_img: /img/top.jpg
+
+# 设置为true后禁用顶部图片
+disable_top_img: false
+
+# 默认页面的top_img，如当前页未配置top_img时，则使用该配置
+default_top_img:
+
+avatar:
+  # 头像地址，可以为在线地址或本地相对路径
+  img: /img/avatar.jpg
+  # 头像动画，为true是会一直转圈
+  effect: false
