@@ -1,10 +1,6 @@
 ---
 title: Kafka
 ---
-<style type="text/css">
-* {font-family: YaHei Consolas Hybrid, Consolas;}
-.wrap * {white-space: normal; word-break: break-word;}
-</style>
 
 # 参考文章
 
@@ -484,3 +480,8 @@ Producer 将消息按延迟时间分组发送到对应 Topic，通过 Consumer�
 差异：消息引擎方面未引入新的重大功能特性，主要是 KafKa Streams 方面的改进。
 - 3.x\
 差异：放弃对 Java8 的支持。
+
+<style type="text/css">
+* {font-family: YaHei Consolas Hybrid, Consolas;}
+.wrap * {white-space: normal; word-break: break-word;}
+</style>

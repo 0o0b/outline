@@ -2,7 +2,6 @@
 title: MySQL
 mathjax: true
 ---
-<style type="text/css">* {font-family: YaHei Consolas Hybrid, Consolas;}</style>
 
 # 引擎
 
@@ -723,4 +722,5 @@ EXPLAIN ANALYZE <查询语句>;
 ```
 
 执行计划树中，节点执行顺序为后续遍历。
-  
+
+<style type="text/css">* {font-family: YaHei Consolas Hybrid, Consolas;}</style>
