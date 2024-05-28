@@ -1,5 +1,14 @@
+# Local search
 local_search:
+  # 是否开启本地搜索
   enable: true
+  # 预加载，开启后，进入网页后会自动加载搜索文件。关闭时，只有点击搜索按钮后，才会加载搜索文件
+  preload: false
+  # 匹配的文章结果，默认显示最开始的 1 段结果
+  top_n_per_article: 1
+  # 将 html 字符串解码为可读字符串
+  unescape: false
+  CDN:
 
 subtitle:
   # 调用一言网的一句話（简体）
