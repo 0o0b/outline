@@ -1,6 +1,7 @@
 ---
 title: MySQL
 ---
+<%- toc(page.content) %>
 <style type="text/css">* {font-family: YaHei Consolas Hybrid, Consolas;}</style>
 
 # 引擎
