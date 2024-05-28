@@ -28,5 +28,3 @@ avatar:
   img: /img/avatar.jpg
   # 头像动画，为true是会一直转圈
   effect: false
-
-follow_me:
