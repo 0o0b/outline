@@ -1,3 +1,6 @@
+---
+title: Kafka
+---
 <style type="text/css">
 * {font-family: YaHei Consolas Hybrid, Consolas;}
 .wrap * {white-space: normal; word-break: break-word;}
