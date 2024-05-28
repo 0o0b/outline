@@ -21,10 +21,12 @@ index_img: /img/top.jpg
 disable_top_img: false
 
 # 默认页面的top_img，如当前页未配置top_img时，则使用该配置
-default_top_img:
+default_top_img: /img/top.jpg
 
 avatar:
   # 头像地址，可以为在线地址或本地相对路径
   img: /img/avatar.jpg
   # 头像动画，为true是会一直转圈
   effect: false
+
+follow_me:
