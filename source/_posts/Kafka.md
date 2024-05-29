@@ -14,7 +14,7 @@ title: Kafka
 
 # 文件布局
 
-![Kafka 文件布局](img/Kafka/Kafka%20%E6%96%87%E4%BB%B6%E5%B8%83%E5%B1%80.png?raw=true)
+![Kafka 文件布局](img/Kafka/Kafka%20%E6%96%87%E4%BB%B6%E5%B8%83%E5%B1%80.png)
 
 - `Broker`：Kafka 服务实例。每个服务器上可以有一个或多个 Broker。Kafka 集群内每个 Broker 都有一个唯一的编号。
 - `Topic`：消息的主题。一个 Broker 上可以创建多个 Topic。
@@ -264,11 +264,11 @@ Consumer 向组协调器发送心跳的时间间隔，必须小于`session.timeo
 - <span id="partition.assignment.strategy">partition.assignment.strategy</span> | list | org.apache.kafka.clients.consumer.RangeAssignor\
 分区分配策略列表，按优先级从高到低列出，取值：
    - `org.apache.kafka.clients.consumer.RangeAssignor`：将消费者按`member_id`排序，对于每个 Topic，设`n = 分区数 / 消费者数`，则`前分区数 % 消费者数`个消费者消费`n + 1`个分区，其余消费者消费`n`个分区\
-   ![Kafka partition.assignment.strategy Range](img/Kafka/Kafka%20partition%20assignment%20strategy%20Range.jpg?raw=true)
+   ![Kafka partition.assignment.strategy Range](img/Kafka/Kafka%20partition%20assignment%20strategy%20Range.jpg)
    - `org.apache.kafka.clients.consumer.RoundRobinAssignor`：所有主题的所有分区都按轮询的方式分配给 Consumer\
-   ![Kafka partition.assignment.strategy RoundRobin](img/Kafka/Kafka%20partition%20assignment%20strategy%20RoundRobin.jpg?raw=true)
+   ![Kafka partition.assignment.strategy RoundRobin](img/Kafka/Kafka%20partition%20assignment%20strategy%20RoundRobin.jpg)
    - `org.apache.kafka.clients.consumer.StickyAssignor`：是 RoundRobin 的变种，会尽量保证各消费者分配到数量接近的 Partition；且 rebalance 时会尽量减少分配方案的变化，仅做必要的重分配\
-   ![Kafka partition.assignment.strategy Sticky](img/Kafka/Kafka%20partition%20assignment%20strategy%20Sticky.jpg?raw=true)
+   ![Kafka partition.assignment.strategy Sticky](img/Kafka/Kafka%20partition%20assignment%20strategy%20Sticky.jpg)
    - `org.apache.kafka.clients.consumer.CooperativeStickyAssignor`：原理与 Sticky 相同，但使用的是 COOPERATIVE 协议。前面三种策略使用 EAGER 协议，在 rebalance 时会发生全局 STW，而 COOPERATIVE 协议则不会
    - 实现`org.apache.kafka.clients.consumer.ConsumerPartitionAssignor`的自定义分区策略
 
