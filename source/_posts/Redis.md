@@ -22,7 +22,7 @@ title: Redis
 
 **使用场景**：
 
-- [UV（Unique Visitor，独立访客量）统计](#uvunique-visitor独立访客量统计)
+- [UV（Unique Visitor，独立访客量）统计](#UV%EF%BC%88Unique-Visitor%EF%BC%8C%E7%8B%AC%E7%AB%8B%E8%AE%BF%E5%AE%A2%E9%87%8F%EF%BC%89%E7%BB%9F%E8%AE%A1)
 - [分时段活跃用户数统计](#分时段活跃用户数统计)
 
 **说明**：
@@ -444,7 +444,7 @@ return n
 
 ## 分时段活跃用户数统计
 
-参考 [UV 统计](#uvunique-visitor独立访客量统计)。
+参考 [UV 统计](#UV%EF%BC%88Unique-Visitor%EF%BC%8C%E7%8B%AC%E7%AB%8B%E8%AE%BF%E5%AE%A2%E9%87%8F%EF%BC%89%E7%BB%9F%E8%AE%A1)。
 
 # 缓存淘汰
 
